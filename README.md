@@ -1,5 +1,5 @@
 
-# PokeApp — a kid-friendly Pokédex (Flutter)
+# PokeDex App
 
 A basic Pokédex built with Flutter. Kids (and grown-ups) can:
 
