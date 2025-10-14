@@ -22,9 +22,14 @@ class _MyHomePageState extends State<MyHomePage> {
         title: SvgPicture.asset('/Users/jesper/projects/pokeapp/assets/logo.svg', height: 50),
       ),
       floatingActionButton: HomePageTabs.values[_selectedIndex].showActionButton
-          ? FloatingActionButton(onPressed: _showFilters, child: Icon(Icons.list_sharp))
+          ? FloatingActionButton(onPressed: _showFilters, child: const Icon(Icons.list_sharp))
           : null,
-      body: HomePageTabs.values[_selectedIndex].widget,
+
+      body: IndexedStack(
+        index: _selectedIndex,
+        children: const [RandomPokemonScreen(), PokeLibraryScreen(), FavoritesScreen()],
+      ),
+
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: Theme.of(context).colorScheme.primary,
         items: const [
@@ -48,12 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
+  void _onItemTapped(int index) => setState(() => _selectedIndex = index);
 }
 
 enum HomePageTabs {
@@ -64,10 +64,4 @@ enum HomePageTabs {
   final bool showActionButton;
 
   const HomePageTabs(this.showActionButton);
-
-  Widget get widget => switch (this) {
-    HomePageTabs.randomPokemonScreen => const RandomPokemonScreen(),
-    HomePageTabs.pokeLibraryScreen => const PokeLibraryScreen(),
-    HomePageTabs.favoritesScreen => const FavoritesScreen(),
-  };
 }
