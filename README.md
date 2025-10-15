@@ -105,7 +105,7 @@ No account, no API key requried - powered by [PokéAPI](https://pokeapi.co/).
 
 -   **fuzzy_bolt** (typo-tolerant search)
 
--   **shared_preferences** (local storage)
+-   **shared_preferences** (local storage for favorites)
 
 ----------
 
@@ -142,14 +142,6 @@ flutter pub get
 
 ```bash
 flutter run
-
-```
-
-### Build
-
-```bash
-flutter build apk        # Android
-flutter build ios        # iOS (from macOS, with signing)
 
 ```
 
@@ -219,7 +211,7 @@ lib/
 
 * **Logger service** (debug/info/warn/error) with tags & throttling.
 
-### UI/UX
+### UI/UX 
 
 * **Richer details**
 * **Animations**
@@ -237,28 +229,20 @@ lib/
 * **Release tracks**:
 
     * iOS: App Store Connect page, **TestFlight**, device testing.
-    * Android: Play Console internal testing, closed track.
+    * Android: Play Console internal testing.
 
 ### Search & filters (BFF option)
 
 * **Backend-for-Frontend** to overcome PokéAPI’s lack of server search:
 
     * Endpoint for **full-text/typo-tolerant search** (prefix+fuzzy).
-    * Server caching, rate limiting, ETag support.
-    * Optional GraphQL facade for tailored payloads.
+    * Server caching, rate limiting,
+    * More specified DTOs for App scope
 * This reduces on-device requests and enables **multi-filter** combos.
-
-### Performance
-
-* **memCacheWidth / maxWidthDiskCache** tuned per image slot.
-* **Frame budget audits** (DevTools) on grid & details transitions.
-* **Shimmer/skeletons** only where helpful (avoid overdraw).
 
 ### Code quality
 
-* **analysis_options.yaml** with strict lints.
-* **Module boundaries** (common/, random_pokemon/, poke_library/, details/).
-* **Feature flags** (e.g., show locations tab) via simple config service.
+* * **analysis_options.yaml** with strict lints.
 
 
 ---
