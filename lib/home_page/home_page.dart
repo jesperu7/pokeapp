@@ -19,7 +19,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: SvgPicture.asset('/Users/jesper/projects/pokeapp/assets/logo.svg', height: 50),
+        title: Center(child: SvgPicture.asset('assets/logo.svg', height: 50)),
       ),
       floatingActionButton: HomePageTabs.values[_selectedIndex].showActionButton
           ? FloatingActionButton(onPressed: _showFilters, child: const Icon(Icons.list_sharp))

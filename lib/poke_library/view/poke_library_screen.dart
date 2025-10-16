@@ -46,6 +46,7 @@ class _PokemonGridErrorWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text('Error fetching pokemon'),
           const SizedBox(height: 20),
@@ -71,7 +72,6 @@ class _PokemonGridWidget extends StatelessWidget {
         else
           Expanded(
             child: GridView.builder(
-              physics: const BouncingScrollPhysics(),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 childAspectRatio: 1.5,
