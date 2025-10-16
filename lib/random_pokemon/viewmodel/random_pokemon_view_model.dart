@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:pokeapp/common/model/pokemon_list_item.dart';
 import 'package:pokeapp/network/result.dart';
 import 'package:pokeapp/random_pokemon/model/random_pokemon_state.dart';
-import 'package:pokeapp/random_pokemon/viewmodel/random_pokemon_remote_source.dart';
+import 'package:pokeapp/random_pokemon/model/data/random_pokemon_remote_source.dart';
 
 class RandomPokemonViewModel {
   final IRandomPokemonRemoteSource _remoteSource;

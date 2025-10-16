@@ -149,34 +149,6 @@ No environment variables or API keys needed.
 
 ----------
 
-##  Project layout (high-level)
-
-```
-lib/
-  common/
-    model/            # shared models like PokemonListItem
-    view/             # shared widgets (images, error cards, etc.)
-  poke_library/
-    view/             # PokeLibraryScreen + filter bottom sheet
-    model/            # grid state
-    viewmodel/        # ViewModel and data source
-  random_pokemon/
-    view/             # RandomPokemonScreen
-    model/            # state
-    viewmodel/        # ViewModel and data source
-  pokemon_details/
-    view/             # Details page + tabs (About/Stats/Evolution)
-    model/            # bundle & state
-    viewmodel/        # ViewModel and data source
-  favorites/
-    view/             # FavoritesScreen & FavoriteButton
-    viewmodel/        # ViewModel and data source
-  network/
-    network_client.dart
-```
-
-----------
-
 
 ##  Credits & license
 

@@ -1,6 +1,6 @@
 import 'package:pokeapp/network/result.dart';
 import 'package:pokeapp/pokemon_details/model/pokemon_details_bundle.dart';
-import 'package:pokeapp/pokemon_details/viewmodel/pokemon_details_remote_source.dart';
+import 'package:pokeapp/pokemon_details/model/data/pokemon_details_remote_source.dart';
 
 
 class MockPokemonDetailsRemoteSource implements IPokemonDetailsRemoteSource {

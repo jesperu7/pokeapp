@@ -1,6 +1,6 @@
 import 'package:pokeapp/common/model/pokemon_list_item.dart';
 import 'package:pokeapp/network/result.dart';
-import 'package:pokeapp/random_pokemon/viewmodel/random_pokemon_remote_source.dart';
+import 'package:pokeapp/random_pokemon/model/data/random_pokemon_remote_source.dart';
 
 class MockRandomPokemonRemoteSource implements IRandomPokemonRemoteSource {
   final Map<String, Result<PokemonListItem>> _responses = {};

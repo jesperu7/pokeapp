@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:pokeapp/common/model/pokemon_list_item.dart';
-import 'package:pokeapp/favorites/viewmodel/favorites_local_source.dart';
+import 'package:pokeapp/favorites/model/data/favorites_local_source.dart';
 
 class MockFavoritesLocalSource implements IFavoritesLocalSource {
 

@@ -5,7 +5,7 @@ import 'package:pokeapp/network/result.dart';
 import 'package:pokeapp/poke_library/model/library_filter.dart';
 import 'package:pokeapp/poke_library/model/pokemon_filters_response.dart';
 import 'package:pokeapp/poke_library/model/pokemon_grid_state.dart';
-import 'package:pokeapp/poke_library/viewmodel/poke_library_remote_source.dart';
+import 'package:pokeapp/poke_library/model/data/poke_library_remote_source.dart';
 
 class PokeLibraryViewModel {
   final IPokeLibraryRemoteSource _remoteSource;

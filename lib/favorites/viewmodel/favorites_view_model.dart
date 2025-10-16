@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:pokeapp/common/model/pokemon_list_item.dart';
-import 'package:pokeapp/favorites/viewmodel/favorites_local_source.dart';
+import 'package:pokeapp/favorites/model/data/favorites_local_source.dart';
 
 class FavoritesViewModel {
   final IFavoritesLocalSource _localSource;

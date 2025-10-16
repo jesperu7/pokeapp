@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:pokeapp/network/result.dart';
 import 'package:pokeapp/pokemon_details/model/pokemon_details_bundle.dart';
 import 'package:pokeapp/pokemon_details/model/pokemon_details_state.dart';
-import 'package:pokeapp/pokemon_details/viewmodel/pokemon_details_remote_source.dart';
+import 'package:pokeapp/pokemon_details/model/data/pokemon_details_remote_source.dart';
 
 class PokemonDetailsViewModel {
   final IPokemonDetailsRemoteSource _remoteSource;
